@@ -7,7 +7,7 @@ public class Main {
         Random random=new Random();
 
         int numeroAleatorio=random.nextInt(5);
-        String[] palabras={"hola", "luto", "bola", "gato", "pera"};
+        String[] palabras={"loro", "pez", "oso", "gato", "lobo"};
 
         String palabraAleatoria=palabras[numeroAleatorio];
         char letra;
@@ -16,7 +16,7 @@ public class Main {
 
         for (int i=0; i<6; i++){
             System.out.println("\n\tTIENES "+(5-i)+" INTENTOS ");
-            System.out.print("Ingrese la letra: ");letra=entrada.next().charAt(0);
+            System.out.print("Ingrese la letra para descubrir el animal: ");letra=entrada.next().charAt(0);
 
             if (palabraAleatoria.indexOf(letra)==-1){
                 if (fallas==1){
@@ -41,7 +41,7 @@ public class Main {
                     System.out.println(" 0 ");
                     System.out.println("/|\\");
                     System.out.println("/ \\");
-                    System.out.println("\n\tHAS PERDIDO :(");
+                    System.out.println("\n\tHAS PERDIDO: (");
                     System.out.println("\tLa palabra era "+palabraAleatoria);
                     break;
                 }
